@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
   createState() {
-    return AppState();
+    return AppState;
   }
 }
 
@@ -13,7 +13,6 @@ class AppState extends State<App> {
     // TODO: implement build
     var app = MaterialApp(
         home: Scaffold(
-      body: Text('$c'),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
@@ -22,7 +21,7 @@ class AppState extends State<App> {
             });
           }),
       appBar: AppBar(
-        title: Text('ssup'),
+        title: App(),
       ),
     ));
     return app;

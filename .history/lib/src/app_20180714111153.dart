@@ -22,7 +22,7 @@ class AppState extends State<App> {
             });
           }),
       appBar: AppBar(
-        title: Text('ssup'),
+        title: App(),
       ),
     ));
     return app;
