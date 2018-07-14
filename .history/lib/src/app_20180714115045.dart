@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:http/http.dart' show get;
-import './ImageModel.dart';
 
 class App extends StatefulWidget {
   createState() {
@@ -11,14 +9,7 @@ class App extends StatefulWidget {
 
 class AppState extends State<App> {
   int c = 0;
-  void fetchImage() async {
-    setState(() {
-      c++;
-    });
-    var response = await get('https://jsonplaceholder.typicode.com/photos/1');
-    ImageModel md = new ImageModel.fromJson(json.decode(response.body));
-  }
-
+  fetchImage() {}
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

@@ -12,11 +12,8 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   int c = 0;
   void fetchImage() async {
-    setState(() {
-      c++;
-    });
+    c++;
     var response = await get('https://jsonplaceholder.typicode.com/photos/1');
-    ImageModel md = new ImageModel.fromJson(json.decode(response.body));
   }
 
   @override
